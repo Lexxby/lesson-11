@@ -1,9 +1,11 @@
 import React from 'react';
 import CollapseWrapper from '../common/collapse';
+import SimpleComponent from './simpleComponent';
 
 const HocExercise = () => {
   return (
     <CollapseWrapper title="Упражнение">
+      <SimpleComponent />
       <p className="mt-3">
         Вам необходимо реализовать компонент <code>SimpleComponent</code>, который:
       </p>
