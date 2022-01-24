@@ -1,6 +1,6 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import CardWrapper from "../../common/Card";
-import SmallTitle from "../../common/typografy/smallTitle";
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+import CardWrapper from '../../common/Card';
+import SmallTitle from '../../common/typografy/smallTitle';
 
 const UseCallBackExample = () => {
   const [data, setData] = useState({});
@@ -40,14 +40,7 @@ const UseCallBackExample = () => {
       <label htmlFor="email" className="form-label">
         Email
       </label>
-      <input
-        type="email"
-        className="form-control"
-        id="email"
-        value={data.email || ""}
-        name="email"
-        onChange={handleChange}
-      />
+      <input type="email" className="form-control" id="email" value={data.email || ''} name="email" onChange={handleChange} />
     </CardWrapper>
   );
 };

@@ -18,6 +18,7 @@ module.exports = {
     'space-before-function-paren': ['error', { anonymous: 'always', named: 'never' }],
     'comma-dangle': ['error', 'never'],
     'multiline-ternary': ['off'],
+    'react/display-name': 'off',
     'no-debugger': ['off']
   }
 };

@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import CardWrapper from "../../common/Card";
-import Divider from "../../common/divider";
-import TextField from "../../common/form/textField";
-import SmallTitle from "../../common/typografy/smallTitle";
-import PropTypes from "prop-types";
+import React, { useEffect, useState } from 'react';
+import CardWrapper from '../../common/Card';
+import Divider from '../../common/divider';
+import TextField from '../../common/form/textField';
+import SmallTitle from '../../common/typografy/smallTitle';
+import PropTypes from 'prop-types';
 
 const FormComponent = ({ children }) => {
   const [data, setData] = useState({});
@@ -18,17 +18,14 @@ const FormComponent = ({ children }) => {
     const config = {
       ...child.props,
       onChange: handleChange,
-      value: data[child.props.name] || ""
+      value: data[child.props.name] || ''
     };
 
     return React.cloneElement(child, config);
   });
 };
 FormComponent.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-  ])
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node])
 };
 const ReactChildrenExample = () => {
   return (
